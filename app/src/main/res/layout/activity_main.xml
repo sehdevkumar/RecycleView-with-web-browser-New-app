@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#6844AC"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="WEBCOMBO"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:src="@drawable/web"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/clickGrid"
+            android:layout_width="40dp"
+            android:background="@drawable/ic_apps_black2_24dp"
+            android:gravity="right"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/myRecycle"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
